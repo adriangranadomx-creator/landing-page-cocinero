@@ -192,28 +192,6 @@
   /* Reveal on scroll */
   .reveal{opacity:0;transform:translateY(34px);transition:.8s cubic-bezier(.2,.7,.3,1)}
   .reveal.visible{opacity:1;transform:translateY(0)}
-
-  /* Menú de comida casera */
-  .menu-comida{background:#fffaf1}
-  .menu-comida .sec-title{max-width:none}
-  .menu-intro{color:var(--muted);max-width:62ch;margin-top:14px}
-  .menu-categorias{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:42px}
-  .menu-grupo{background:#fff;border:1px solid #eadfc9;border-radius:20px;padding:28px;box-shadow:0 12px 30px rgba(30,39,64,.06)}
-  .menu-grupo h3{font-size:1.5rem;color:var(--terra);padding-bottom:14px;margin-bottom:8px;border-bottom:1px solid #eee3d0}
-  .menu-item{display:flex;justify-content:space-between;gap:18px;padding:17px 0;border-bottom:1px dashed #e5dac7}
-  .menu-item:last-child{border-bottom:0;padding-bottom:0}
-  .menu-item h4{font-size:1rem;margin-bottom:5px;color:var(--navy)}
-  .menu-item p{font-size:.88rem;line-height:1.55;color:var(--muted)}
-  .menu-precio{font-weight:700;color:var(--terra);white-space:nowrap;font-size:1.05rem}
-  .menu-extras{margin-top:28px;background:var(--navy);color:var(--cream);border-radius:20px;padding:28px}
-  .menu-extras h3{font-size:1.5rem;color:var(--gold2);margin-bottom:18px}
-  .extras-lista{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 24px}
-  .extra-item{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid rgba(247,242,232,.13);font-size:.92rem}
-  .extra-item b{color:var(--gold2);white-space:nowrap}
-  .menu-accion{text-align:center;margin-top:32px}
-  .menu-nota{font-size:.82rem;color:var(--muted);margin-top:12px}
-  @media(max-width:700px){.menu-categorias{grid-template-columns:1fr}.menu-grupo{padding:22px}.extras-lista{grid-template-columns:1fr}}
-
 </style>
 <base target="_blank">
 </head>
@@ -230,8 +208,7 @@
     <div class="nav-links" id="navLinks">
       <a href="#historia">Mi historia</a>
       <a href="#servicios">Servicios</a>
-      <a href="#menu">Menú</a>
-      <a href="#lasaña">Lasaña</a>
+      <a href="#pasticho">Lasaña</a>
       <a href="#contacto">Contacto</a>
       <a class="nav-cta" href="https://wa.me/523314312461?text=Hola%20Adri%C3%A1n%2C%20quiero%20pedir%20un%20pasticho%20%F0%9F%8D%9D" target="_blank">Pide tu lasaña</a>
     </div>
@@ -379,79 +356,6 @@
   </div>
 </section>
 
-
-<!-- MENÚ -->
-<section class="menu-comida" id="menu">
-  <div class="wrap">
-    <div class="sec-eyebrow reveal">Hecho en casa, con oficio</div>
-    <h2 class="sec-title reveal">Nuestro <em>menú</em></h2>
-    <p class="menu-intro reveal">Comida casera, pastas, ensaladas y postres preparados con el cuidado y el sabor de casa.</p>
-
-    <div class="menu-categorias">
-      <article class="menu-grupo reveal">
-        <h3>Platos fuertes</h3>
-        <div class="menu-item">
-          <div><h4>Lasaña</h4><p>Porción de 500 g · Pan con ajo y ensalada César.</p></div>
-          <span class="menu-precio">$160</span>
-        </div>
-        <div class="menu-item">
-          <div><h4>Milanesa de pollo a la napolitana</h4><p>Porción de 160 g · Papas a la francesa y ensalada César.</p></div>
-          <span class="menu-precio">$180</span>
-        </div>
-      </article>
-
-      <article class="menu-grupo reveal">
-        <h3>Pastas</h3>
-        <div class="menu-item">
-          <div><h4>Pasta a la boloñesa</h4><p>Espagueti, rigatoni o fusilli · Porción de 150 g · Pan con ajo.</p></div>
-          <span class="menu-precio">$165</span>
-        </div>
-        <div class="menu-item">
-          <div><h4>Pasta cremosa</h4><p>Espagueti, rigatoni o fusilli con salsa cremosa, tocino y pechuga de pollo · Porción de 150 g.</p></div>
-          <span class="menu-precio">$160</span>
-        </div>
-      </article>
-
-      <article class="menu-grupo reveal">
-        <h3>Ensaladas</h3>
-        <div class="menu-item">
-          <div><h4>Ensalada César con pollo</h4><p>Con aderezo, parmesano y tocino.</p></div>
-          <span class="menu-precio">$130</span>
-        </div>
-      </article>
-
-      <article class="menu-grupo reveal">
-        <h3>Postres y bebidas</h3>
-        <div class="menu-item">
-          <div><h4>Flan napolitano</h4></div><span class="menu-precio">$75</span>
-        </div>
-        <div class="menu-item">
-          <div><h4>Cheesecake horneado</h4><p>Con culí de frutos rojos.</p></div><span class="menu-precio">$75</span>
-        </div>
-        <div class="menu-item">
-          <div><h4>Refrescos</h4><p>Coca-Cola, Sprite, Fanta o Coca-Cola Zero.</p></div><span class="menu-precio">$35</span>
-        </div>
-      </article>
-    </div>
-
-    <div class="menu-extras reveal">
-      <h3>Extras</h3>
-      <div class="extras-lista">
-        <div class="extra-item"><span>Pan con mantequilla de ajo</span><b>$10</b></div>
-        <div class="extra-item"><span>Pesto</span><b>$15</b></div>
-        <div class="extra-item"><span>Queso parmesano</span><b>$15</b></div>
-        <div class="extra-item"><span>Pechuga de pollo</span><b>$55</b></div>
-        <div class="extra-item"><span>Extra de boloñesa</span><b>$60</b></div>
-        <div class="extra-item"><span>Chile en aceite</span><b>$15</b></div>
-      </div>
-    </div>
-    <div class="menu-accion reveal">
-      <a class="btn btn-wa" href="https://wa.me/523314312461?text=Hola%20Adri%C3%A1n%2C%20quiero%20hacer%20un%20pedido%20del%20men%C3%BA" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a>
-      <p class="menu-nota">Precios en pesos mexicanos. Consulta disponibilidad al realizar tu pedido.</p>
-    </div>
-  </div>
-</section>
-
 <!-- PASTICHO ESTRELLA -->
 <section class="estrella" id="lasaña">
   <div class="wrap estrella-grid">
@@ -526,21 +430,8 @@
 
   const burger = document.getElementById('burger');
   const navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    burger.setAttribute('aria-expanded', String(isOpen));
-  });
-  burger.setAttribute('aria-expanded', 'false');
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    burger.setAttribute('aria-expanded', 'false');
-  }));
-  addEventListener('keydown', e => {
-    if (e.key === 'Escape') {
-      navLinks.classList.remove('open');
-      burger.setAttribute('aria-expanded', 'false');
-    }
-  });
+  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
